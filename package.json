@@ -1,0 +1,33 @@
+{
+  "name": "hexaguys",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Teepo/hexaguys",
+  "author": "Anthony Ribeiro",
+  "license": "MIT",
+  "scripts": {
+    "app": "node_modules/electron/cli.js ./src/js/electron.js",
+    "web": "./node_modules/serve/bin/serve.js ./public/",
+    "jsdoc": "node_modules/jsdoc/jsdoc.js -c jsdoc.json",
+    "build": "yarn run build-js",
+    "build-js": "node_modules/webpack/bin/webpack.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-flow": "^7.12.1",
+    "@babel/runtime": "^7.12.5",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "electron": "^11.1.1",
+    "eslint": "^7.17.0",
+    "eslint-loader": "^4.0.2",
+    "phaser": "^3.51.0",
+    "serve": "^11.3.2",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
+  }
+}
