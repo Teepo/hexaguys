@@ -6,6 +6,7 @@
   "author": "Anthony Ribeiro",
   "license": "MIT",
   "scripts": {
+    "watch": "node_modules/webpack/bin/webpack.js --watch",
     "app": "node_modules/electron/cli.js ./src/js/electron.js",
     "web": "./node_modules/serve/bin/serve.js ./public/",
     "jsdoc": "node_modules/jsdoc/jsdoc.js -c jsdoc.json",
@@ -26,7 +27,9 @@
     "eslint": "^7.17.0",
     "eslint-loader": "^4.0.2",
     "phaser": "^3.51.0",
+    "phaser3-rex-plugins": "^1.1.36",
     "serve": "^11.3.2",
+    "three": "^0.124.0",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1"
   }
